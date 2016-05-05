@@ -3,6 +3,63 @@
 global-reset()
 
 body
-  width: 100vw;
-  height: 100vh;
-  background: #2196F3;
+  font-family: 'Lato'
+  width: 100vw
+  height: 100vh
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  
+  background: #4d8df1; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #4d8df1 0%, #4877e3 26%, #4369da 52%, #3b4bc7 78%, #3228b1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #4d8df1 0%,#4877e3 26%,#4369da 52%,#3b4bc7 78%,#3228b1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #4d8df1 0%,#4877e3 26%,#4369da 52%,#3b4bc7 78%,#3228b1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  
+  .content-container
+    display: flex
+    padding: 40px
+    
+    .left
+      text-align: center
+      display: flex
+      justify-content: center
+      flex-direction: column
+      padding: 30px
+      
+      .logo
+        display: inline-block
+        max-height: 90px
+        position: absolute
+        top: 18px
+        left: -10px
+      
+    .right
+      text-align: center
+      padding: 30px
+      
+      .image
+        img
+          max-height: 80vh;
+
+    h1
+      font-size: 100px
+      font-family: 'Righteous', 'Lato'
+      font-weight: 700
+      letter-spacing: 0.3px
+      position: relative
+      
+    .desc
+      font-size: 22.4px
+      font-family: 'Lato'
+      opacity: 0.9
+      margin-top: 5px
+      font-weight: 300
+      
+  header, footer
+    padding: 15px
+    
+  footer
+    font-size: 12px
+    font-weight: 300
